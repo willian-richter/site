@@ -1,0 +1,205 @@
+
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+
+            header{
+                display: flex;
+                justify-content: flex-end;
+                width:100vw;
+                height: 15vh;
+                border:1px solid #000;
+                position:fixed;
+                background-color:#fff;
+                font-size: 30px;
+             
+               
+            }
+            header div{
+                display: flex;
+                justify-content: flex-start;
+                padding: 0px
+            }
+            header div img{
+                display: flex;
+                
+            }
+
+            .container{
+                display:flex;
+                flex-direction:column;
+                justify-content: start;
+            }
+            main{
+                width:100vw;
+                
+                
+                
+            }
+            section{
+                width:95%;
+                min-height: 80vh;
+                border:1px solid #000;
+                padding-top:15vh;
+                display:flex;
+                margin:0 auto;
+            }
+
+            #sobre div div{
+                width: 50%;
+                float:left;
+            }
+            #sobre-img{
+                display:flex;
+            }
+            #sobre-img div{
+                width: 50%;
+                
+                align-self:flex-end;
+            }
+            #sobre-img div img{
+                border:1px solid #333;
+                width: 90%;
+            }
+
+            nav ul{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-around;
+            }
+            nav ul li{
+                list-style: none;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+            footer{
+                width:100vw;
+                height: 10vh;
+                border:1px solid #000;
+            }
+            #cursos div div{
+                display:flex;
+                float: left;
+                margin-top: 20vh;
+                align-items: flex-end;
+                font-size: 15px;
+                
+                
+            }
+            #cusos{
+                display: flex;
+                font-size: 25vw;
+                
+                
+            }
+            #planos{
+                display: flex;
+                
+                
+                
+                
+                   
+            }
+
+            #planos div{
+                display: flex;
+                
+            
+            }
+           
+            #planos div{
+                flex-direction: column;  
+            }
+
+        @media all and (min-width:1024px) {
+            #sobre div{
+                width:50%;
+            }
+            .container{
+                flex-direction: row;
+            }
+            section div{
+                width:30%;
+            }
+            
+           
+        }   
+            
+
+        </style>
+<!DOCTYPE html>
+  <html>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta charset="UTF-8" />
+                <meta name="keywords"content="cimol, cursos, valores,"/>
+                <meta name="discription"content="site sobre conteudo de cuesos sobre o Cimol com tabela de planos e valores"/>
+                <meta name="copyright"content="2021 Willian Richter"/>
+                <title>Site teste</title>
+    </head>
+    <body>
+        <header class="container">
+            <nav>
+                <ul>
+                    <div id="logo"><img src="./imagens/logo.png"></div>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="sobre" class="container">
+                <div>
+                    <h1 style="border-left:3px solid #545644">Sobre</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla libero velit, imperdiet vel accumsan sed, condimentum id eros. Fusce venenatis efficitur leo at tristique. In ultricies porttitor lacus, et luctus tellus tincidunt non. Sed ac urna eleifend, scelerisque quam efficitur, varius lectus. Duis vitae vestibulum mauris, nec imperdiet sem. Sed at lacinia tortor. Nunc fermentum lobortis urna, sit amet tristique augue sagittis et.</p>
+                </div>
+                <div id="sobre-img">
+                    <div><img src="./imagens/java.png"/></div>
+                    <div><img src="./imagens/php.png"/></div>
+                </div>
+                
+            </section>
+            <section id="cursos" class="container">
+                <div>
+                    <h1>Cursos</h1>
+                    <p>disigner gráfico</p>
+                    <div><img src="./imagens/web-design.png"/></div>
+                    <p>Programação</p>
+                    <div><img src="./imagens/java.png"/></div>
+                    <p>banco de dados</p>
+                    <div><img src="./imagens/bd.png"/></div>
+                </div>
+            </section>
+            <section id="planos" class="container">
+                <div>
+                <h1>Planos</h1>
+                <h2>Bronze</h2>
+                <h3>19,90</h3>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla libero velit, imperdiet vel </p>
+                </div>
+                <div>
+                <h2>Prata</h2>
+                <h3>29,90</h3>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla libero velit, imperdiet vel leo at tristique. </p>
+                </div>
+                <div>
+                <h2>Ouro</h2>
+                <h3>39,90</h3>
+                <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla libero velit, imperdiet vel leo at r</p>
+                </div>
+            </section>
+            <section id="valores" class="container">
+                <h1>Valores</h1>
+            </section>
+        </main>
+        <footer></footer>
+
+
+    </body>
+</html>
